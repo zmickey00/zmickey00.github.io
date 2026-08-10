@@ -15,8 +15,8 @@ name                     : &name "Zhiyu Zhang"
 description              : &description "Zhiyu Zhang is a PhD student in Operations Management at Duke University's Fuqua School of Business."
 url                      : "https://zmickey00.github.io"
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "/Zhiyu-Zhang"
-repository               : "zmickey00/Zhiyu-Zhang"
+baseurl                  : ""
+repository               : "zmickey00/zmickey00.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
