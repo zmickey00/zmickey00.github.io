@@ -11,3 +11,5 @@ end
 
 gem 'github-pages'
 gem 'connection_pool', '2.5.0'
+# macOS ships Ruby 2.6; keep the native dependency compatible for local previews.
+gem 'ffi', '< 1.17.0'
