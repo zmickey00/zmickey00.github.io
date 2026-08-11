@@ -6,6 +6,8 @@ author_profile: false
 redirect_from:
   - /about/
   - /about.html
+  - /Zhiyu-Zhang/
+  - /Zhiyu-Zhang/index.html
 ---
 
 <main class="home-landing">
@@ -82,15 +84,7 @@ redirect_from:
     <p>I’m always glad to meet fellow researchers, students, and members of the academic community.</p>
     <div class="home-contact__links">
       <a href="https://www.linkedin.com/in/zhiyuzhangmickey" rel="me noreferrer">Find me on LinkedIn <span aria-hidden="true">↗</span></a>
-      <button class="home-email" id="email-contact" type="button">Email me <span aria-hidden="true">↗</span></button>
+      <span class="home-email">zz393 at duke dot edu</span>
     </div>
   </section>
 </main>
-
-<script>
-  document.getElementById("email-contact").addEventListener("click", function () {
-    var mailbox = [51, 57, 51, 122, 122].reverse().map(String.fromCharCode).join("");
-    var host = [117, 100, 101, 46, 101, 107, 117, 100].reverse().map(String.fromCharCode).join("");
-    window.location.href = "mailto:" + mailbox + String.fromCharCode(64) + host;
-  });
-</script>

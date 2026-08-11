@@ -64,6 +64,7 @@
 
 .splash { width: 100%; }
 .splash .page__content { margin: 0; }
+#main { opacity: 1; animation: none; }
 .splash .page__content h1,
 .splash .page__content h2,
 .splash .page__content h3 { border-bottom: 0; }
@@ -132,6 +133,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  min-height: 520px;
   background: var(--zz-blue);
   color: white;
 }
@@ -250,36 +252,22 @@
 .home-contact__links { position: relative; z-index: 1; display: flex; flex-wrap: wrap; align-items: baseline; gap: 1rem 2rem; }
 .home-contact__links a { margin-top: 1rem; }
 .home-contact .home-email {
+  display: inline-block;
   margin: 1rem 0 0;
-  padding: 0;
-  border: 0;
-  background: transparent;
   color: #fff;
-  font: inherit;
   font-weight: 700;
-  text-decoration: underline;
-  cursor: pointer;
 }
 
 @media (max-width: 760px) {
   .home-hero { min-height: 0; grid-template-columns: 1fr; padding-top: 5rem; }
-  .home-portrait { width: min(100%, 420px); aspect-ratio: 5 / 4; }
+  .home-portrait { width: min(100%, 420px); min-height: 340px; aspect-ratio: 5 / 4; }
   .home-about { grid-template-columns: 1fr; gap: 1rem; }
   .home-journey__header { display: block; }
   .home-timeline li { grid-template-columns: 42px 1fr; }
   .home-timeline__mark { display: none; }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .home-button { transition: transform .2s ease, box-shadow .2s ease; }
-  .home-hero__copy { animation: zz-rise .7s ease both; }
-  .home-portrait { animation: zz-rise .7s .12s ease both; }
-}
-
-@keyframes zz-rise {
-  from { opacity: 0; transform: translateY(18px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+.home-button { transition: transform .2s ease, box-shadow .2s ease; }
 
 html[data-theme="dark"] .home-landing {
   --zz-ink: #f4f7fb;
